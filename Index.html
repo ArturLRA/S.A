@@ -75,9 +75,74 @@
     <div class="projects">
         <h1>Projects</h1>
 
-        <div class="projectsFilter"></div>
-        
-        <div class="projectsBlocks"></div>
+        <!-- Filtros de seleção -->
+<div class="projectsFilter">
+    <!-- Filtro por Matéria -->
+    <select id="subjectFilter">
+      <option value="">Matéria</option>
+      <option value="matematica">Matemática</option>
+      <option value="portugues">Português</option>
+    </select>
+  
+    <!-- Filtro por Trimestre -->
+    <select id="trimesterFilter">
+      <option value="">Trimestre</option>
+      <option value="1">1º Trimestre</option>
+      <option value="2">2º Trimestre</option>
+      <option value="3">3º Trimestre</option>
+    </select>
+  
+    <!-- Filtro por Ferramenta -->
+    <select id="toolFilter">
+      <option value="">Ferramenta</option>
+      <option value="figma">Figma</option>
+      <option value="canva">Canva</option>
+      <option value="html">HTML</option>
+    </select>
+  
+    <!-- Filtro por Linguagem -->
+    <select id="languageFilter">
+      <option value="">Linguagem</option>
+      <option value="js">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="css">CSS</option>
+    </select>
+  </div>
+  
+  <!-- Blocos de projetos -->
+  <div class="projectsBlocks">
+  
+    <!-- Projeto 1 com tags visuais -->
+    <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="figma" data-language="js">
+      <img src="../Photos/project1.jpg" alt="Projeto 1">
+      <h3>Calculadora Matemática</h3>
+      <p>Uma calculadora feita para atividades do 1º trimestre.</p>
+  
+      <!-- Tags do projeto -->
+      <div class="tags">
+        <span class="tag">Matemática</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Figma</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+  
+    <!-- Projeto 2 com tags visuais -->
+    <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css">
+      <img src="../Photos/project2.jpg" alt="Projeto 2">
+      <h3>Cartaz Literário</h3>
+      <p>Cartaz desenvolvido para exposição sobre literatura brasileira.</p>
+  
+      <!-- Tags do projeto -->
+      <div class="tags">
+        <span class="tag">Português</span>
+        <span class="tag">2º Trimestre</span>
+        <span class="tag">Canva</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+  
+  </div>
 
     </div>
 
