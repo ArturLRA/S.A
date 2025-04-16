@@ -12,24 +12,19 @@
         <h1 class="artur">ARTUR<i class="alves">ALVES</i></h1>
 
         <div class="navButtons">
-        <button class="homeButton">Home</button>
+        <button class="homeButton" onclick="window.scroll(0, 0);">Home</button>
 
-        <button class="aboutMeButton">About Me</button>
+        <button class="aboutMeButton" href="#aboutMe">About Me</button>
 
-        <button class="projectsButton">Projects</button>
+        <button class="projectsButton" href="#projects">Projects</button>
 
-        <button class="contactButton">Contact</button>
-
-        <button class="darkMode"></button>
-
-        <button class="translate"></button>
+        <button class="contactButton" href="#contact">Contact</button>
         </div>
 
     </div>
 
-    <div class="home">
-        <h3>Software developer</h3>
-        <h1>Hello i'm<i> Artur Luiz</i></h1>
+    <div class="home" id="home">
+        <h1>Software<br>developer</h1>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nullam nibh mauris, rhoncus in egestas ut, ultrices a sem. 
             Donec ut eros eget mi suscipit varius nec eget diam. 
@@ -38,7 +33,7 @@
             sit amet tristique quam scelerisque.</h4>
         
         <div class="homeButtons">
-        <button class="donwloadCV">Download CV</button>
+        <button class="downloadCV">Download CV</button>
         <button class="instagram"></button>
         <button class="linkedin"></button>
         <button class="github"></button>
@@ -58,7 +53,7 @@
 
     </div>
 <div class="view">
-    <div class="aboutMe">
+    <div class="aboutMe" id="aboutMe">
         <h1>About Me</h1>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nullam nibh mauris, rhoncus in egestas ut, ultrices a sem. 
@@ -72,19 +67,19 @@
         <div class="languagesBlocks"></div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <h1>Projects</h1>
 
-        <!-- Filtros de seleção -->
+
 <div class="projectsFilter">
-    <!-- Filtro por Matéria -->
+
     <select id="subjectFilter">
       <option value="">Matéria</option>
       <option value="matematica">Matemática</option>
       <option value="portugues">Português</option>
     </select>
   
-    <!-- Filtro por Trimestre -->
+    
     <select id="trimesterFilter">
       <option value="">Trimestre</option>
       <option value="1">1º Trimestre</option>
@@ -92,7 +87,7 @@
       <option value="3">3º Trimestre</option>
     </select>
   
-    <!-- Filtro por Ferramenta -->
+    
     <select id="toolFilter">
       <option value="">Ferramenta</option>
       <option value="figma">Figma</option>
@@ -100,7 +95,7 @@
       <option value="html">HTML</option>
     </select>
   
-    <!-- Filtro por Linguagem -->
+    
     <select id="languageFilter">
       <option value="">Linguagem</option>
       <option value="js">JavaScript</option>
@@ -109,16 +104,16 @@
     </select>
   </div>
   
-  <!-- Blocos de projetos -->
+  
   <div class="projectsBlocks">
   
-    <!-- Projeto 1 com tags visuais -->
+    
     <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="figma" data-language="js">
       <img src="../Photos/project1.jpg" alt="Projeto 1">
       <h3>Calculadora Matemática</h3>
       <p>Uma calculadora feita para atividades do 1º trimestre.</p>
   
-      <!-- Tags do projeto -->
+      
       <div class="tags">
         <span class="tag">Matemática</span>
         <span class="tag">1º Trimestre</span>
@@ -127,13 +122,13 @@
       </div>
     </div>
   
-    <!-- Projeto 2 com tags visuais -->
+    
     <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css">
       <img src="../Photos/project2.jpg" alt="Projeto 2">
       <h3>Cartaz Literário</h3>
       <p>Cartaz desenvolvido para exposição sobre literatura brasileira.</p>
   
-      <!-- Tags do projeto -->
+      
       <div class="tags">
         <span class="tag">Português</span>
         <span class="tag">2º Trimestre</span>
@@ -142,11 +137,25 @@
       </div>
     </div>
   
+    <div class="projectCard" data-subject="ci" data-trimester="2" data-tool="canva" data-language="css">
+      <img src="../Photos/project2.jpg" alt="Projeto 2">
+      <h3>Cartaz Literário</h3>
+      <p>Cartaz desenvolvido para exposição sobre literatura brasileira.</p>
+  
+      
+      <div class="tags">
+        <span class="tag">Português</span>
+        <span class="tag">2º Trimestre</span>
+        <span class="tag">Canva</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+
   </div>
 
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <h1>Contact</h1>
     </div>
 </div>
