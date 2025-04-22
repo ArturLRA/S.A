@@ -6,7 +6,8 @@
     .home,
     .aboutMe,
     .projects,
-    .contact {
+    .contact,
+    .oldPortfolio {
         max-width: 75rem; /* 1200px */
         margin: 5rem auto 0 auto; /* 80px */
         padding: 0 2.5rem; /* 40px */
@@ -52,7 +53,8 @@
     .home,
     .aboutMe,
     .projects,
-    .contact {
+    .contact,
+    .oldPortfolio {
         margin-top: 5rem; /* 80px */
         padding: 0 1.25rem; /* 80px */
         
@@ -65,7 +67,7 @@
     }
 }
 
-@keyframes appear{
+/* @keyframes appear{
     from {
         opacity: 0;
         transform: translateX(-10vw);
@@ -74,7 +76,7 @@
         opacity: 1;
         transform: translateX(0vw);
     }
-}
+} */
 
 .view {
     animation: appear linear;
@@ -164,11 +166,18 @@ body {
 .homeButton,
 .aboutMeButton,
 .projectsButton,
-.contactButton {
+.contactButton,
+.oldPortfolioButton {
     background-color: transparent;
     border: none;
     color: #ffffff;
     cursor: pointer;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .circleBorder {
@@ -230,6 +239,7 @@ body {
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .downloadCV:hover {
@@ -291,22 +301,35 @@ body {
     background-color: #343232;
 }
 
+.oldPortfolio {
+    padding: 5% 5%;
+    margin-top: 5%;
+    background-color: #343232;
+}
+
 .projects {
     padding: 5% 5%;
     background-color: #535050;
     
 }
 
-/* Container dos filtros */
+
+.projects h1 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 .projectsFilter {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    background-color: #292727;
+    padding: 5% 5%;
+    border-radius: 1rem;
 }
 
-/* Estilo dos select dropdowns */
 .projectsFilter select {
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -317,8 +340,61 @@ body {
     cursor: pointer;
 }
 
-/* Card de projeto individual */
-.projectCard {
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 1rem;
+    text-align: center;
+    color: #292727;
+    position: relative;
+  }
+  
+  .modalContent img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modalContent a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #8704AC;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #8704AC;
+  }
+
+.projectCard, 
+.portifolioCard {
     background-color: #3a3a3a;
     padding: 1rem;
     border-radius: 1rem;
@@ -328,15 +404,14 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* Imagem do projeto */
-.projectCard img {
+.projectCard img,
+.portifolioCard img{
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-/* Container de tags */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -344,7 +419,6 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Estilo visual das tags */
 .tag {
     background-color: #8704AC;
     color: white;
@@ -355,7 +429,20 @@ body {
 }
 
 .contact {
-    padding: 5% 5%;
+    padding: 2% 5%;
     background-color: #292727;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+     text-decoration: underline;
 }
 

@@ -42,3 +42,30 @@ function filterProjects() {
         }
     });
 }
+
+projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const modal = document.getElementById('projectModal');
+      document.getElementById('modalImg').src = card.querySelector('img').src;
+      document.getElementById('modalTitle').textContent = card.querySelector('h3').textContent;
+      document.getElementById('modalDescription').textContent = card.querySelector('p').textContent;
+      if (card.dataset.link === '') {
+        document.getElementById('modalLink').style.display = 'none';
+      }
+      else {
+        document.getElementById('modalLink').href = card.dataset.link;
+      }
+
+      modal.style.display = 'flex';
+    });
+  });
+  
+  document.querySelector('.closeBtn').addEventListener('click', () => {
+    document.getElementById('projectModal').style.display = 'none';
+  });
+  
+  window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  });
