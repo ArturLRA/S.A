@@ -26,6 +26,7 @@
     .navButtons{
         margin-right: 0;
         gap: 5rem; /* 80px */
+        text-decoration: none;
     }
 }
 
@@ -64,6 +65,7 @@
 @media screen and (max-width: 62.5rem) { /* 1000px */
     .navButtons {
         gap: 1.875rem; /* 30px */
+        text-decoration: none;
     }
 }
 
@@ -128,6 +130,8 @@ body {
     margin-right: 5vw;
 
     color: #ffffff;
+
+    text-decoration: none;
 }
 
 .home {
@@ -283,7 +287,7 @@ body {
     height: auto;
 }
 
-@keyframes down {
+/* @keyframes down {
     0% {
         transform: translateY(0);
     }
@@ -293,7 +297,7 @@ body {
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 .aboutMe {
     padding: 5% 5%;
@@ -305,18 +309,30 @@ body {
     padding: 5% 5%;
     margin-top: 5%;
     background-color: #343232;
+
+}
+
+.modalLink {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #8704AC;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 30%;
 }
 
 .projects {
     padding: 5% 5%;
     background-color: #535050;
-    
 }
 
 
 .projects h1 {
     text-align: center;
     margin-bottom: 70px;
+    margin-top: 150px;
 }
 
 .projectsFilter {
@@ -340,59 +356,6 @@ body {
     cursor: pointer;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modalContent {
-    background-color: #fff;
-    padding: 2rem;
-    max-width: 600px;
-    width: 90%;
-    border-radius: 1rem;
-    text-align: center;
-    color: #292727;
-    position: relative;
-  }
-  
-  .modalContent img {
-    width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .modalContent a {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #8704AC;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.5rem;
-  }
-  
-  .closeBtn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #8704AC;
-  }
-
 .projectCard, 
 .portifolioCard {
     background-color: #3a3a3a;
@@ -402,6 +365,15 @@ body {
     width: 100%;
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .projectCard img,

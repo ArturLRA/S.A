@@ -12,20 +12,20 @@
         <h1 class="artur">ARTUR<i class="alves">ALVES</i></h1>
 
         <div class="navButtons">
-        <button class="homeButton" onclick="window.scroll(0, 0);">Início</button>
+        <a class="homeButton" onclick="window.scroll(0, 0);">Início</a>
 
-        <button class="aboutMeButton" href="#aboutMe">Sobre Mim</button>
+        <a class="aboutMeButton" href="#aboutMe">Sobre Mim</a>
 
-        <button class="oldPortfolioButton">Portfólio Antigo</button>
+        <a class="oldPortfolioButton" href="#oldPortfolio">Portfólio Antigo</a>
 
-        <button class="projectsButton" href="#projects">Projetos</button>
+        <a class="projectsButton" href="#projects">Atividades</a>
 
         </div>
 
     </div>
 
     <div class="home" id="home">
-        <h1>Software<br>developer</h1>
+        <h1>Desenvolvedor de<br>software</h1>
         <h4>Prazer, sou o Artur - Um estudante de desenvolvimento de software com interesse na área de back-end,
           busco constantemente aprimorar minhas habilidades na área de programação em geral
           , sempre expandindo meu conhecimento.</h4>
@@ -56,43 +56,50 @@
     </div>
 <div class="view">
     <div class="aboutMe" id="aboutMe">
-        <h1>About Me</h1>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam nibh mauris, rhoncus in egestas ut, ultrices a sem. 
-            Donec ut eros eget mi suscipit varius nec eget diam. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Etiam at egestas risus. Proin porta mi sit amet velit tristique, 
-            sit amet tristique quam scelerisque.</h4>
+        <h1>Sobre mim</h1>
+        <h4>Prazer, meu nome é Artur Luiz Rodrigues Alves, mas meus amigos me chamam só de Artur,
+            sou nativo aqui de Florianópolis, minha família é bem grande,
+            ela conta com 3 irmãos e um cachorros. atualmente eu tenho 17 anos,
+            e estou cursando o terceiro ano do ensino médio aqui no Sesi Senai de Florianópolis.
+            Desde pequeno, sempre tive uma ligação com jogos eletronicos,
+            um dos meus maiores sonhos é trabalhar com essa area, seria uma realização perfeita pra mim.
+            Sou um cara muito simples, não quero muito alem disso, apenas uma vida estavel para mim e minha familia.</h4>
 
         <div class="languagesBlocks"></div>
     </div>
 
+    
     <div class="oldPortfolio" id="oldPortfolio">
       <h1>Portfólios Antigos</h1>
 
+      <div class="cardContainer">
       <div class="portifolioCard">
         <img src="../Photos/portifolio2023.png" alt="portifólio 2023">
-        <h3>Portifólio de 2023</h3>
+        <h3>Portfólio de 2023</h3>
         <a class="modalLink" href="https://www.canva.com/design/DAFcnj_CDQk/B23yM-wbehep6c1LalWZ5g/edit?utm_content=DAFcnj_CDQk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Portifólio</a>
       </div>
 
       <div class="portifolioCard">
         <img src="../Photos/portifolio2024.png" alt="portifólio 2024">
-        <h3>Portifólio de 2024</h3>
+        <h3>Portfólio de 2024</h3>
         <a class="modalLink" href="https://sites.google.com/estudante.sesisenai.org.br/portifolioarturluiz2b/in%C3%ADcio">Acessar Portifólio</a>
       </div>
+    </div>
 
   </div>
 
     <div class="projects" id="projects">
-        <h1>atividades</h1>
+        <h1>Atividades</h1>
 
 <div class="projectsFilter">
 
     <select id="subjectFilter">
       <option value="">Matéria</option>
       <option value="matematica">Matemática</option>
-      <option value="portugues">Português</option>
+      <option value="portugues">Linguagens</option>
+      <option value="tecnico">Técnico</option>
+      <option value="humanas">Humanas</option>
+      <option value="ciencias">Ciências</option>
     </select>
   
     
@@ -108,251 +115,234 @@
       <option value="">Ferramenta</option>
       <option value="figma">Figma</option>
       <option value="canva">Canva</option>
-      <option value="html">HTML</option>
+      <option value="googleSites">Google Sites</option>
+      <option value="googleDocs">Google Docs</option>
+      <option value="googleSheets">Google Sheets</option>
     </select>
-  
     
-    <select id="languageFilter">
-      <option value="">Linguagem</option>
-      <option value="js">JavaScript</option>
-      <option value="python">Python</option>
-      <option value="css">CSS</option>
-    </select>
-  </div>
-
-  <div id="projectModal" class="modal">
-    <div class="modalContent">
-      <span class="closeBtn">&times;</span>
-      <img id="modalImg" src="" alt="Imagem do Projeto">
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescription"></p>
-      <a id="modalLink" href="#" target="_blank">Acessar Projeto</a>
-    </div>
   </div>
   
   <div class="portugueseBlocks">
   
-    <h1>Português</h1>
+    <h1>Linguagens</h1>
 
-    <div class="projectCard" data-subject="portugues" data-trimester="1" data-tool="figma" data-language="" data-link="">
+    <div class="cardContainer">
+
+    <div class="projectCard" data-subject="portugues" data-trimester="1">
       <img src="../Photos/notaredacao.png" alt="Nota redação">
+      <div class="tags">
+        <span class="tag">Linguagens</span>
+        <span class="tag">1º Trimestre</span>
+      </div>
       <h3>Nota Redação</h3>
       <p>Essa atividade foi uma simulação da redação do ENEM, nessa atividade, 
          não tivemos nenhuma habilidade específica desenvolvida.</p>
-  
-      
-      <div class="tags">
-        <span class="tag">Matemática</span>
-        <span class="tag">1º Trimestre</span>
-        <span class="tag">Figma</span>
-        <span class="tag">JavaScript</span>
-      </div>
     </div>
   
     
-    <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css" data-link="https://www.canva.com/design/DAGfdDMdwxg/-n50i02GSWUUt-aejTcF9A/edit?utm_content=DAGfdDMdwxg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="projectCard" data-subject="portugues" data-trimester="1" data-tool="canva">
       <img src="../Photos/revistaLiteraria.png" alt="Revista literaria">
+      <div class="tags">
+        <span class="tag">Linguagens</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
       <h3>Revista literária</h3>
       <p>Nessa atividade, foi pedida a construção de um arquivo no canva que simula um revista literaria, nessa revista, foram pedidas algumas atividades.
-
       </p>
-  
+      <a class="modalLink" href="https://www.canva.com/design/DAGfdDMdwxg/-n50i02GSWUUt-aejTcF9A/edit?utm_content=DAGfdDMdwxg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+
     </div>
   
-    <div class="projectCard" data-subject="ci" data-trimester="2" data-tool="canva" data-language="css" data-link="https://www.canva.com/design/DAGlRwZfZhY/RR0mDCw5gwFPc4hbU1JEhQ/edit?utm_content=DAGlRwZfZhY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="projectCard" data-subject="portugues" data-trimester="1" data-tool="canva">
       <img src="../Photos/biografiaPortifolio.png" alt="Biografia portifólio">
+      <div class="tags">
+        <span class="tag">Linguagens</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
       <h3>Biografia portifólio</h3>
       <p>Nessa atividade, foi pedido para que fizessemos uma biografia em formato de curriculo, as habilidades que foram usadas para avaliação nessa atividade não foram disponibilizadas.</p>
-  
+      <a class="modalLink" href="https://www.canva.com/design/DAGlRwZfZhY/RR0mDCw5gwFPc4hbU1JEhQ/edit?utm_content=DAGlRwZfZhY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+
     </div>
 
-    <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css" data-link="https://sites.google.com/estudante.sesisenai.org.br/rumoafaculdade/in%C3%ADcio">
+    <div class="projectCard" data-subject="portugues" data-trimester="1" data-tool="googleSites">
       <img src="../Photos/repertorioParaOEnem.png" alt="Revista literaria">
+      <div class="tags">
+        <span class="tag">Linguagens</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Google Sites</span>
+      </div>
+    
       <h3>Repertório para o ENEM</h3>
       <p>Nessa atividade, foi pedida a construção de um site com informações de auxilio para estudos para o ENEM, nessa atividade, as habilidades que foram usadas para avaliação nessa atividade não foram disponibilizadas.
-
       </p>
-  
-      
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+      <a class="modalLink" href="https://sites.google.com/estudante.sesisenai.org.br/rumoafaculdade/in%C3%ADcio">Acessar Atividade</a>
     </div>
 
+
   </div>
+</div>
 
   <div class="mathBlocks">
   
     <h1>Matemática</h1>
-
-    <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="figma" data-language="js" data-link="https://docs.google.com/document/d/1qxpLkSE1RbK5dNkH77lDvYb5T8qMRl2b74rLDc_EeVw/edit?usp=sharing">
+    <div class="cardContainer">
+    <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="googleDocs">
       <img src="../Photos/quebrandoABanca.jpg" alt="Quebrando a banca">
-      <h3>Quebrando a banca</h3>
-      <p>Nessa atividade, foi pedido para criarmos um jogo inspirado no filme "quebrando a banca", a unica regra é que o jogo deve ter probabilidade envolvida, essa atividade trabalha com as habilidades: H31 e H30 e as competências: C5</p>
-  
-      
       <div class="tags">
         <span class="tag">Matemática</span>
         <span class="tag">1º Trimestre</span>
-        <span class="tag">Figma</span>
-        <span class="tag">JavaScript</span>
+        <span class="tag">Google Docs</span>
       </div>
+      <h3>Quebrando a banca</h3>
+      <p>Nessa atividade, foi pedido para criarmos um jogo inspirado no filme "quebrando a banca", a unica regra é que o jogo deve ter probabilidade envolvida, essa atividade trabalha com as habilidades: H31 e H30 e as competências: C5</p>
+      <a class="modalLink" href="https://docs.google.com/document/d/1qxpLkSE1RbK5dNkH77lDvYb5T8qMRl2b74rLDc_EeVw/edit?usp=sharing">Acessar Atividade</a>
+      
+
     </div>
   </div>
-
+</div>
   <div class="scienceBlocks">
   
     <h1>Natureza</h1>
-
-    <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="figma" data-language="js" data-link="https://www.canva.com/design/DAGe1sLzD-Y/DpHRIMj7ic0KvFdKYCw32w/edit?utm_content=DAGe1sLzD-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="cardContainer">
+    <div class="projectCard" data-subject="ciencias" data-trimester="1" data-tool="canva">
       <img src="../Photos/polutiontypes.png" alt="tipos de poluição">
+      <div class="tags">
+        <span class="tag">Ciências</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
       <h3>Apresentação sobre os tipos de poluição.</h3>
       <p>Nessa atividade foi pedida uma apresentação sobre os tipos de poluição presentes no mundo, essa atividade abrange as habilidades: H1, H3 e H4. E as competências: C1</p>
-  
+      <a class="modalLink" href="https://www.canva.com/design/DAGe1sLzD-Y/DpHRIMj7ic0KvFdKYCw32w/edit?utm_content=DAGe1sLzD-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Matemática</span>
-        <span class="tag">1º Trimestre</span>
-        <span class="tag">Figma</span>
-        <span class="tag">JavaScript</span>
-      </div>
+
     </div>
   
     
-    <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css" data-link="https://www.canva.com/design/DAGlUAVW66M/Gdaelpf3VT0eMw8jPGCR-Q/edit?utm_content=DAGlUAVW66M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="projectCard" data-subject="ciencias" data-trimester="1" data-tool="canva">
       <img src="../Photos/revisaoEletrostatica.png" alt="Projeto 2">
+      <div class="tags">
+        <span class="tag">Ciências</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
       <h3>Revisão eletrostática</h3>
       <p>Nessa atividade, foi pedido um mapa mental sobre o conteúdo de eletrostática para revisão para a prova, essa atividade abrange as habilidades: H29, H30 e H31</p>
-  
+      <a class="modalLink" href="https://www.canva.com/design/DAGlUAVW66M/Gdaelpf3VT0eMw8jPGCR-Q/edit?utm_content=DAGlUAVW66M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+
     </div>
   
-    <div class="projectCard" data-subject="ci" data-trimester="2" data-tool="canva" data-language="css" data-link="https://www.canva.com/design/DAGiFfHSsCw/36ddY5XWzNykzqgNeYwv8g/edit?utm_content=DAGiFfHSsCw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="projectCard" data-subject="ciencias" data-trimester="1" data-tool="canva">
       <img src="../Photos/estequiometria.png" alt="Projeto 2">
+      <div class="tags">
+        <span class="tag">Ciências</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
       <h3>Estequiometria</h3>
       <p>Nessa atividade, foi pedida a criação de uma apresentação explicando sobre estequiometria, essa atividade abrange as habilidades: H7, H9 e H10 e as competências: C2</p>
-  
+      <a class="modalLink" href="https://www.canva.com/design/DAGiFfHSsCw/36ddY5XWzNykzqgNeYwv8g/edit?utm_content=DAGiFfHSsCw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+
     </div>
 
-    <div class="projectCard" data-subject="ci" data-trimester="2" data-tool="canva" data-language="css" data-link="https://docs.google.com/document/d/1aYaSyz-xCG2k0vCg5V2EW2p1pBVE1g6W8MB7U8uofh8/edit?usp=sharing">
+    <div class="projectCard" data-subject="ciencias" data-trimester="1" data-tool="googleDocs">
       <img src="../Photos/decaimentoradioativo.png" alt="Projeto 2">
+      <div class="tags">
+        <span class="tag">Ciências</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Google Docs</span>
+      </div>
       <h3>Decaimento radioativo e tempo de meia vida</h3>
       <p>Nessa atividade, foi proposta a criação de um documento de texto explicando sobre as aplicações e implicações do decaimento radioativo, a atividade abrange as habilidades: H1, H3 e H4. E as competências: C1</p>
-  
+      <a class="modalLink" href="https://docs.google.com/document/d/1aYaSyz-xCG2k0vCg5V2EW2p1pBVE1g6W8MB7U8uofh8/edit?usp=sharing">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+
     </div>
 
   </div>
-
+  </div>
   <div class="historyBlocks">
   
     <h1>Humanas</h1>
-
-    <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="figma" data-language="js" data-link="https://www.canva.com/design/DAGiWoxXMD4/P2Iu86AqHbRlZ2odPVdovw/edit?utm_content=DAGiWoxXMD4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="cardContainer">
+    <div class="projectCard" data-subject="humanas" data-trimester="1" data-tool="canva">
       <img src="../Photos/quizImperialismo.png" alt="Projeto 1">
+
+      <div class="tags">
+        <span class="tag">Humanas</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
+
       <h3>Quiz imperialismo</h3>
       <p>Nessa atividade foi proposta a criação de um quiz com o tema do imperialismo dos EUA, essa atividade não teve as habilidades ou competências específicadas.</p>
-  
-      
-      <div class="tags">
-        <span class="tag">Matemática</span>
-        <span class="tag">1º Trimestre</span>
-        <span class="tag">Figma</span>
-        <span class="tag">JavaScript</span>
-      </div>
+      <a class="modalLink" href="https://www.canva.com/design/DAGiWoxXMD4/P2Iu86AqHbRlZ2odPVdovw/edit?utm_content=DAGiWoxXMD4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
+    
     </div>
   
     
-    <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css" data-link="https://www.canva.com/design/DAGe7WiUMdM/FtI3rZNyIhC-ojUhJkIgbg/edit?utm_content=DAGe7WiUMdM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    <div class="projectCard" data-subject="humanas" data-trimester="1" data-tool="canva">
       <img src="../Photos/geopolitica.png" alt="Projeto 2">
+      <div class="tags">
+        <span class="tag">Humanas</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Canva</span>
+      </div>
       <h3>Geopolítica</h3>
       <p>Nessa atividade, foi proposta a criação de uma apresentação sobre a suiça, apresentando sobre suas relações internas e externas, ou informações gerais do país, como mortalidade e natalidade, a atividade abrangeu as habilidades: H8, H10 e H12. E as competencias: C2</p>
-  
+      <a class="modalLink" href="https://www.canva.com/design/DAGe7WiUMdM/FtI3rZNyIhC-ojUhJkIgbg/edit?utm_content=DAGe7WiUMdM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
       
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+
     </div>
   </div>
-  
+  </div>
   <div class="tiBlocks">
   
     <h1>Técnico</h1>
-
-    <div class="projectCard" data-subject="matematica" data-trimester="1" data-tool="figma" data-language="js" data-link="https://docs.google.com/spreadsheets/d/1BWdvnEHxe_WnBoltyZalErsJuT_hzTA0B7xutNoGrko/edit?usp=sharing">
+    <div class="cardContainer">
+    <div class="projectCard" data-subject="tecnico" data-trimester="1" data-tool="googleSheets">
       <img src="../Photos/atividadeHamburgueria.png" alt="Projeto 1">
+      <div class="tags">
+        <span class="tag">Técnico</span>
+        <span class="tag">1º Trimestre</span>
+        <span class="tag">Google Sheets</span>
+      </div>
       <h3>Atividade hamburgueria</h3>
       <p>Nessa atividade foi proposta a criação de uma planilha para documentar os requisitos funcionais (NF) os requisitos não funcionais (RNF) e as regras de negócio (RN) de uma haburgueria fictícia, essa atividade abrange as habilidades: H4, H7 e H8.</p>
-  
+      <a class="modalLink" href="https://docs.google.com/spreadsheets/d/1BWdvnEHxe_WnBoltyZalErsJuT_hzTA0B7xutNoGrko/edit?usp=sharing">Acessar Atividade</a>
       
+
+    </div>
+    
+    
+    <div class="projectCard" data-subject="tecnico" data-trimester="1" data-tool="figma">
+      <img src="../Photos/saApresentacao1.png" alt="Projeto 2">
       <div class="tags">
-        <span class="tag">Matemática</span>
+        <span class="tag">Técnico</span>
         <span class="tag">1º Trimestre</span>
         <span class="tag">Figma</span>
-        <span class="tag">JavaScript</span>
       </div>
-    </div>
-  
-    
-    <div class="projectCard" data-subject="portugues" data-trimester="2" data-tool="canva" data-language="css" data-link="https://www.canva.com/design/DAGjOy8RZB8/XBlzUQqcHP-KIccAPV-FOA/edit?utm_content=DAGjOy8RZB8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-      <img src="../Photos/saApresentacao1.png" alt="Projeto 2">
       <h3>S.A - apresentação 1</h3>
       <p>Nessa atividade, foi proposta a criação de uma empresa fictícia que atende a dor (problema) de alguma industria, essa empresa deve ter um produto que envolve hardware (utilizando um arduino) e um software (site e aplicativo), além de apresentar suas regras de negócio, requisitos funcionais e requisitos não funcionais, essa atividade abrange as habilidades: H1, H2, H3, H4, H6 H7</p>
-  
-      
-      <div class="tags">
-        <span class="tag">Português</span>
-        <span class="tag">2º Trimestre</span>
-        <span class="tag">Canva</span>
-        <span class="tag">CSS</span>
-      </div>
+      <a class="modalLink" href="https://www.canva.com/design/DAGjOy8RZB8/XBlzUQqcHP-KIccAPV-FOA/edit?utm_content=DAGjOy8RZB8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Acessar Atividade</a>
+    
     </div>
 
     </div>
-
+  </div>
+</div> 
     <div class="contact" id="contact">
       <h1>Contato</h1>
-      <p>E-mail: <a href="mailto:artur.luiz.rodrigues.alves@gmail.com">artur.luiz.rodrigues.alves@gmail.com</a></p>
-      <p>Telefone: <a href="tel:+554888158370">+55 48 8815-8370</a></p>
+      <p>E-mail: <a>artur.luiz.rodrigues.alves@gmail.com</a></p>
+      <p>Telefone: <a>+55 48 8815-8370</a></p>
       <p>GitHub: <a href="https://github.com/ArturLRA" target="_blank">ArturLRA</a></p>
   </div>
     
